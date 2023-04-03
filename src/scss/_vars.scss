@@ -2,11 +2,16 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --font-family:'Montserrat', sans-serif;
+  --content-width: 1180px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
+  --accent-color: #FF6E40;
+  --dark-color: #251D1A;
+  --white-color: #FFFFFF;
+  --text-color: #EFE7E2;
+  --onyx-color: #3B322D;
 }

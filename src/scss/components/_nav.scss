@@ -1,0 +1,23 @@
+.nav {
+    &__body {
+        @include flex-all-center;
+        gap: 40px
+    }
+
+    &__menu-item {
+        list-style: none;
+
+    }
+
+    &__link {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 135%;
+        color: var(--text-color);
+    }
+    &__link:hover{
+        opacity: .7;
+    }
+}
