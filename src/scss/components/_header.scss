@@ -1,17 +1,18 @@
 .header {
-    position: absolute;
-    left: 0;
-    right: 0;
     width: 100%;
+    background-color: var(--onyx-color);
     &__container {
         @include flex-all-sb;
-        padding: 30px 15px;
+        padding: 30px 15px 781px;
+        @media (max-width: 991.98px){
+            padding: 30px 15px 50vh
+        }
     }
 
     &__logo {
         @include flex-all-sb;
         position: relative;
-        z-index: 2;
+        z-index: 5;
         gap: 18px;
     }
 

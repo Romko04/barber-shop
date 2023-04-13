@@ -1,0 +1,53 @@
+.features {
+    background-color: var(--dark-color);
+
+    &__container {
+        padding-top: 350px;
+        padding-bottom: 120px;
+        @media (max-width: 991.98px){
+        padding-top: 300px;
+
+        }
+    }
+
+    &__items {
+        @include flex-all-sb;
+        gap: 140px;
+        @media (max-width: 991.98px){
+            gap: 50px;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        @include flex-all-center;
+        flex-direction: column;
+    }
+
+    &__item-title {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 135%;
+        /* identical to box height, or 32px */
+        margin: 24px 0 10px 0;
+        text-align: center;
+
+        color: #EFE7E2;
+    }
+
+    &__item-text {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        /* or 24px */
+
+        text-align: center;
+
+        color: #B7AAA2;
+
+    }
+}
