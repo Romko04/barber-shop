@@ -1,7 +1,33 @@
 .nav {
     &__body {
+        @media (max-width: 991.98px) {
+            left: -120%;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--onyx-color);
+            padding: 120px 15px 30px 15px;
+            transition: left ease .3s;
+            overflow: auto;
+        }
+    }
+
+    &__body-items {
         @include flex-all-center;
-        gap: 40px
+        gap: 40px;
+        @media (max-width: 991.98px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+    }
+
+    &__body.active {
+        display: block;
+        left: 0;
     }
 
     &__menu-item {
@@ -16,8 +42,12 @@
         font-size: 15px;
         line-height: 135%;
         color: var(--text-color);
+        @media (max-width: 991.98px) {
+            font-size: 25px;
+        }
     }
-    &__link:hover{
+
+    &__link:hover {
         opacity: .7;
     }
 }

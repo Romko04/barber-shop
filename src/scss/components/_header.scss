@@ -10,6 +10,8 @@
 
     &__logo {
         @include flex-all-sb;
+        position: relative;
+        z-index: 2;
         gap: 18px;
     }
 
@@ -19,13 +21,66 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 150%;
-        color: var(--text-color)
+        color: var(--text-color);
+        @media (max-width: 991.98px) {
+            display: none;
+        }
     }
+        &__burger{
+            display: none;
+            @media (max-width: 991.98px){
+                display: block;
+                position: relative;
+                width: 2.5rem;
+                height: 1.8rem;
+                cursor: pointer;
+                z-index: 5;
+                color: inherit;
+                background-color: inherit;
+                border: none;
+            }
 
-    &__contacts {
-        @include flex-v-center;
-        gap: 50px
-    }
+        }
+        &__burger::before {
+            top: 0;
+        }
+        &__burger.active::before {
+            top: calc(50% - .125rem);
+            transform: rotate(-45deg);
+        }
+        &__burger.active::after {
+            bottom: calc(50% - .125rem);
+            transform: rotate(45deg);
+        }
+        &__burger.active span {
+            display: none;
+        }
+        &__burger span {
+            top: calc(50% - .125rem);
+        }
+        &__burger::after {
+            bottom: 0;
+        }
+        &__burger span, &__burger::after, &__burger::before{
+            @media (max-width: 991.98px){
+                content: "";
+                -webkit-transition: all .3s ease 0s;
+                -o-transition: all .3s ease 0s;
+                transition: all .3s ease 0s;
+                right: 0;
+                position: absolute;
+                width: 100%;
+                height: .25rem;
+                background-color: #fff;
+            }
+        }
+        &__contacts {
+            @include flex-v-center;
+            gap: 50px;
+            @media (max-width: 991.98px) {
+                display: none;
+            }
+        }
 
     &__contacts-location {
         @include flex-v-center;
