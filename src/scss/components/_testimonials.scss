@@ -1,0 +1,10 @@
+.testimonials{
+    background-color: var(--onyx-color);
+    &__container{
+        text-align: center;
+    }
+    &__sub-title{
+        max-width: 380px;
+        margin-bottom: 60px;
+    }
+}

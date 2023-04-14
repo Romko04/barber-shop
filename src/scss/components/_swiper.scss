@@ -1,0 +1,54 @@
+.swiper {
+    &-slide {
+        max-width: 280px;
+    }
+
+    position: relative;
+
+    &__btn {
+        content: '';
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 30%;
+        width: 40px;
+        cursor: pointer;
+        height: 40px;
+    }
+
+    &-btn-prev {
+        background-image: url(../../img/slider/sliderbtnprev.svg);
+        left: -55px;
+    }
+
+    &-btn-next {
+        background-image: url(../../img/slider/sliderbtnnext.svg);
+        right: -50px;
+    }
+}
+
+.slide {
+    &-title {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+
+    &-subtitle {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: left;
+        color: #FFFFFF;
+
+    }
+}
+
+.testimonials-swiper {
+    position: relative;
+}

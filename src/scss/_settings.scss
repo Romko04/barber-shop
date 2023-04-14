@@ -16,7 +16,26 @@ h3,h4,h5,h6{
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
 }
-
+.title{
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  margin: 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+.text{
+  max-width: 580px;
+  display: inline-block;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #EFE7E2;
+}
 .page__body {
   margin: 0;
   min-height: 100%;

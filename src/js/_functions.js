@@ -49,12 +49,6 @@ import { enableScroll } from './functions/enable-scroll';
 //   placement: 'right'
 // });
 
-// Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
