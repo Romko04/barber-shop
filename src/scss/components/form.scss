@@ -1,0 +1,140 @@
+.form {
+    position: relative;
+    top: -145px;
+    text-align: center;
+    background-color: #FF6E40;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        margin: 0;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 133%;
+        color: #000000;
+    }
+
+    &__subtitle {
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 143%;
+        color: #3B322D;
+        margin-bottom: 35px;
+    }
+
+    &__input-btn {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 18.5px 51px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 152%;
+        color: #FFFFFF;
+    }
+
+    &__fields {
+        display: flex;
+        gap: 20px;
+        padding: 0 20px;
+        @media (max-width: 717px) {
+            flex-direction: column;
+        }
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input {
+        padding: 23px 119px 23px 20px;
+
+        @media (max-width: 382px) {
+            padding: 23px 40px 23px 20px;
+            ;
+        }
+
+        max-width: 323px;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #000000;
+    }
+    &__input:focus{
+        outline: none;
+    }
+    &__input-phone::placeholder {
+        font-family: 'Fira Sans';
+        max-width: 230px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 135%;
+        color: #FFFFFF;
+    }
+
+    &__input-email::placeholder {
+        font-family: 'Fira Sans';
+        max-width: 230px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 135%;
+        color: #FFFFFF;
+    }
+
+    &__checkbox-content {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        gap: 7px;
+        margin-top: 24px;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__label {
+        position: relative;
+        cursor: pointer;
+        padding-left: 18px;
+        /* Відступ для резерву під чекбокс */
+        margin-bottom: 10px;
+    }
+
+    &__label::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 12px;
+        /* Розмір чекбокса */
+        height: 12px;
+        /* Розмір чекбокса */
+        border: 2px solid #000;
+        /* Колір та товщина обводки чекбокса */
+        background-color: #000;
+        /* Колір фону чекбокса (чорний) */
+    }
+    &__checkbox:checked+label:before {
+        content: "\2713";
+    /* Код символу "галочка" */
+    font-size: 8px;
+    /* Розмір галочки */
+    line-height: 12px;
+    /* Висота рядка для вирівнювання галочки */
+    text-align: center;
+    /* Вирівнювання галочки по центру */
+    color: #fff;
+    /* Колір галочки (білий) */
+    }
+}
