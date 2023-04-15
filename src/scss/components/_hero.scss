@@ -7,6 +7,9 @@
     &__container {
         position: relative;
         height: 1000px;
+        @media (max-width: 991.98px) {
+            height: 70vh;
+        }
         z-index: 1;
     }
 
@@ -81,7 +84,7 @@
         line-height: 150%;
         /* or 27px */
         color: #EFE7E2;
-        @media (max-width: 290.98px) {
+        @media (max-width: 336px) {
             display: none;
         }
     }
@@ -90,19 +93,15 @@
         color: #FFFFFF;
         padding: 18.5px 51px;
         max-width: 194px;
-        margin: 50% 0 0 60px;
         cursor: pointer;
         border: none;
-        @media (max-width: 991.98px) {
-            margin: 13% 60px 30px 60px;
+        position: absolute;
+        bottom: 60px;
+        left: 60px;
+        @media (max-width: 569.98px) {
+            bottom: 20px;
+            left: 20px;
         }
-        @media (max-width: 290.98px) {
-            margin: 10% 60px 30px 60px;
-            padding: 10px 15px;
-        }
-        // @media (max-width: 569.98px) {
-        //     bottom: 90vh;
-        // }
     }
     &__content-btn:hover{
         background-color: #a1523a;

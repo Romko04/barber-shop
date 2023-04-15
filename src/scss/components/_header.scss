@@ -102,9 +102,6 @@
         @include flex-v-center;
         gap: 15px
     }
-    &__contacts-tel:hover {
-        opacity: .7;
-    }
     &__contacts-number-text {
         max-width: 146px;
         font-family: 'Fira Sans';

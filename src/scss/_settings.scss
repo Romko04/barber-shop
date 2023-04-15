@@ -16,6 +16,9 @@ h3,h4,h5,h6{
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
 }
+a:hover {
+  opacity: .7;
+}
 .title{
   font-family: 'Fira Sans';
   font-style: normal;
